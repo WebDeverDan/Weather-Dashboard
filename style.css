@@ -42,10 +42,9 @@ header {
   padding: 30px 40px;
   text-align: center;
 }
-
+/* This class has been added to center the text. */
 .card-header {
   text-align: center;
-
 }
 
 .card-header::after {
