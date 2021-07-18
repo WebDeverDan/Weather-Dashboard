@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="Assets/style.css">
+    <title>Weather Dashboard</title>
+</head>
+<body>
+<header>
+    <div class="banner">
+        <h1>Weather Dashboard</h1>
+    </div>
+</header>
+<main class="container-fluid col-12">
+    <!-- navi card on the left -->
+    <div class="row">
+        <div class="column col-3">
+            <div class="sideCard form-group">
+                <div id="inputArea">
+                <h2 id="sideCardTitle">Search for a City</h2>
+                    <input type="text" class="form-control" id="inputValue" placeholder="Enter City Name Here" style="font-style:italic">
+                    <button type="submit" class="btn btn-primary btn-lg w-100 mx-auto" id="searchBtn">Search</button>
+                </div>
+                <div class="sideCard cityLinks card" id="buttonBox" style="width: 100%">
+                </div>
+            </div>
+        </div>
+        <div class="weatherInfo">
+            <div class="mainWeatherDetail">
+                <div id="weatherTitleBox">
+                    <div id="currentDayIconSection">
+                    <p id="city"><span> </span><p>
+                    <p id="currentDay"></p>
+                    <img id="currentDayImage" src="http://openweathermap.org/img/wn/10d@2x.png" alt="weather icon" class="wIcon">
+                    </div>
+                </div>
+                <div id="weatherDetails">
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">Temp: <span id="temp"></span>&degF</li>
+                    <li class="list-group-item">Wind: <span id="wind"></span> MPH</li>
+                    <li class="list-group-item">Humidity: <span id="humidity"></span></li>
+                    <li id="uvBox" class="list-group-item">UV Index: <span id="uv"></span></li>
+                </ul>
+                </div>
+            </div>
+
+            <div class="fiveDayHdr">
+                <h2>Five Day Forecast</h2>
+            </div>
+
+            <div class="miniBoxContainer">
+                <div id="day1">
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">Date: <span id="day1Date"></span></li>
+                    <img id="day1Image" class="list-group-item"src="http://openweathermap.org/img/wn/10d@2x.png" alt="weather icon" class="wIcon">
+                    <li class="list-group-item">Temp: <span id="day1Temp"></span>&degF</li>
+                    <li class="list-group-item">Wind: <span id="day1Wind"></span></span> MPH</li>
+                    <li class="list-group-item">Humidity: <span id="day1Humidity"></span>%</li>
+                </ul>
+                </div> 
+                <div id="day2">
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">Date: <span id="day2Date"></span></li>
+                    <img id="day2Image" class="list-group-item" src="http://openweathermap.org/img/wn/10d@2x.png" alt="weather icon" class="wIcon">
+                    <li class="list-group-item">Temp: <span id="day2Temp"></span>&degF</li>
+                    <li class="list-group-item">Wind: <span id="day2Wind"></span> MPH</li>
+                    <li class="list-group-item">Humidity: <span id="day2Humidity"></span>%</li>
+                </ul>
+                </div>
+                <div id="day3">
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">Date: <span id="day3Date"></span></li>
+                    <img id="day3Image" class="list-group-item" src="http://openweathermap.org/img/wn/10d@2x.png" alt="weather icon" class="wIcon">
+                    <li class="list-group-item">Temp: <span id="day3Temp"></span>&degF</li>
+                    <li class="list-group-item">Wind: <span id="day3Wind"></span> MPH</li>
+                    <li class="list-group-item">Humidity: <span id="day3Humidity"></span>%</li>
+                </ul>
+                </div> 
+                <div id="day4">
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">Date: <span id="day4Date"></span></li>
+                    <img id="day4Image" class="list-group-item" src="http://openweathermap.org/img/wn/10d@2x.png" alt="weather icon" class="wIcon">
+                    <li class="list-group-item">Temp: <span id="day4Temp"></span>&degF</span></li>
+                    <li class="list-group-item">Wind: <span id="day4Wind">XX</span> MPH</li>
+                    <li class="list-group-item">Humidity: <span id="day4Humidity"></span>%</li>
+                </ul>
+                </div>
+                <div id="day5">
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">Date: <span id="day5Date"></span></li>
+                    <img id="day5Image" class="list-group-item" src="http://openweathermap.org/img/wn/10d@2x.png" alt="weather icon" class="wIcon">
+                    <li class="list-group-item">Temp: <span id="day5Temp">&degF</span></li>
+                    <li class="list-group-item">Wind: <span id="day5Wind"></span> MPH</li>
+                    <li class="list-group-item">Humidity: <span id="day5Humidity"></span>%</li>
+                </ul>
+                </div>    
+            </div>
+    </div>
+        <!-- start of the weather information box and mini boxes -->
+        <!-- Searched City Details -->                    
+</main>
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.27.0/moment.min.js"></script>
+<script src="/Assets/script.js"></script>
+</body>
+</html>
