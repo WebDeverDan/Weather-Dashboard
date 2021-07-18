@@ -20,6 +20,7 @@ h2 {
     background-color: var(--white);
     height: 4em;
     margin-bottom: 2em;
+    border-bottom: solid;
 }
 
 #sideCardTitle {
