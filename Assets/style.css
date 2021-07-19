@@ -5,7 +5,7 @@
 
 body {
     font-family: arial;
-    background-image: url("/backgroundImage.jpg");
+    /* background-image: url("/backgroundImage.jpg"); choose alternate image*/
     background-size: cover;
 }
 
