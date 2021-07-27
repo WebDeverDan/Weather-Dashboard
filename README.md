@@ -6,8 +6,8 @@ The code was quite challenging, and the need to comment out most of the lines wa
 
 Once the prompts complete, the password will generate based on the length and a random string of characters that is assembled from selected options. The password appears in the placeholder box upon completion. 
 
-![Image 1 of application:](https://github.com/rollerbladerdan/Random-Password-Generator/blob/master/Images/Screenshot%201%20-%20Pre%20Generation.png)
-![Image 2 of application:](https://github.com/rollerbladerdan/Random-Password-Generator/blob/master/Images/Screenshot%202%20-%20Generation.png)
+![Image 1 of application:](https://github.com/WebDeverDan/Random-Password-Generator/blob/master/Images/Screenshot%201%20-%20Pre%20Generation.png)
+![Image 2 of application:](https://github.com/WebDeverDan/Random-Password-Generator/blob/master/Images/Screenshot%202%20-%20Generation.png)
  
-Github Repository: https://github.com/rollerbladerdan/Random-Password-Generator
-Github pages deployment: https://rollerbladerdan.github.io/Random-Password-Generator/
+Github Repository: https://github.com/WebDeverDan/Random-Password-Generator
+Github pages deployment: https://WebDeverDan.github.io/Random-Password-Generator/
