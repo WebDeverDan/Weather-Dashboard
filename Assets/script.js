@@ -22,17 +22,17 @@ $(document).ready(function () {
   var buttons = document.querySelector("buttons");
   var history = [];
 
+
   function loadStorage() {
     var savedCities = JSON.parse(localStorage.getItem("history"));
     console.log("history", savedCities);
 
+      var arraySize = savedCities.length;
+      var lastIndex = arraySize -1;
     // this is for the first value in the array
-    showcityinfo(savedCities[0])
-    
-
-    // showcityinfo(savedCities[savedCities.length - 1]);
-
-    // function makeButton(cityValue) {
+    if (lastIndex > -1 ) {
+    showcityinfo(savedCities[lastIndex])
+    }
     };
 
     function showcityinfo(cityName) {
