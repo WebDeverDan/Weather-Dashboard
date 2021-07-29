@@ -8,6 +8,10 @@ body {
     background-image: url(IMG_0570.JPG);
     background-size: cover;
 }
+h1 {
+    color: var(--white);
+    margin: 1em;
+}
 
 h2 {
     align-items: center;
@@ -17,10 +21,11 @@ h2 {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: var(--white);
+    background-color: #0066cc;
     height: 4em;
     margin-bottom: 2em;
     border-bottom: solid;
+    
 }
 
 #sideCardTitle {
