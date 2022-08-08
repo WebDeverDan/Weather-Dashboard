@@ -1,10 +1,3 @@
-// user will enter in city that they desire the weather for in search bar (done)
-// when user clicks search, the city information will appear in the main box, and below the 5 day forecast will appear (done)
-// within the main box, UV index will appear, and the color of the index will change based on paramaters. (done)
-// the city will also appear as a clickable button on the left panel. This will occur each time a new city is searched (done)
-// upon clicking the city button, that city's information will re-appear (done)
-// information will be stored and persist in local storage
-// make page look decent (done)
 
 // Date will pull in automatically using Moment
 var now = moment().format(" (MM/D/YYYY)");
@@ -128,11 +121,11 @@ $(document).ready(function () {
               fetch(forecastAPI)
                 .then((data) => data.json())
                 .then((data) => {
-                  // console.log(data)
-                  // console.log("forecast_is_here")
+               
 
-                  // console.log(data.list[3])
+                  
                   // this is the setup for each mini time block. the 3 refers to the day in list of objects found in json data., the time is in unix timecode, and the format is from moment
+                  // day 1
                   $("#day1Date").html(
                     moment(data.list[3].dt, "X").format("MM/DD/YYYY")
                   );
@@ -147,6 +140,7 @@ $(document).ready(function () {
                   $("#day1Wind").html(data.list[3].wind.speed);
 
                   // console.log(data.list[11])
+                  // day 2
                   $("#day2Date").html(
                     moment(data.list[11].dt, "X").format("MM/DD/YYYY")
                   );
@@ -161,6 +155,7 @@ $(document).ready(function () {
                   $("#day2Wind").html(data.list[11].wind.speed);
 
                   // console.log(data.list[19])
+                  // day 3
                   $("#day3Date").html(
                     moment(data.list[19].dt, "X").format("MM/DD/YYYY")
                   );
@@ -175,6 +170,7 @@ $(document).ready(function () {
                   $("#day3Wind").html(data.list[19].wind.speed);
 
                   // console.log(data.list[26])
+                  // day 4
                   $("#day4Date").html(
                     moment(data.list[26].dt, "X").format("MM/DD/YYYY")
                   );
@@ -189,6 +185,7 @@ $(document).ready(function () {
                   $("#day4Wind").html(data.list[26].wind.speed);
 
                   // console.log(data.list[34])
+                  // day 5
                   $("#day5Date").html(
                     moment(data.list[34].dt, "X").format("MM/DD/YYYY")
                   );
