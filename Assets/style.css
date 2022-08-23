@@ -21,12 +21,21 @@ h2 {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #407BFF;
+    background-color: green;
     height: 4em;
     margin-bottom: 2em;
-    border-bottom: solid;
-    
-}
+    width: 100%;
+    }
+
+.banner2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: green;
+    height: 4em;
+    margin-bottom: 2em;
+    width: 75%;
+    }
 
 #sideCardTitle {
     background-color: var(--white);
@@ -117,8 +126,8 @@ h2 {
 }
 
 #uv {
-    border-radius: 10px;
-    padding: .5em;
+    border-radius: 5px;
+    padding: .25em;
 }
 
 .fiveDayHdr {
@@ -132,63 +141,63 @@ h2 {
     margin-bottom: 1em;
 }
 
-.miniBoxContainer {
+/* .miniBoxContainer {
     display: flex;
     width: 100%;
     margin-bottom: 2em;
-}
+} */
 
-#day1 {
+/* #day1 {
     margin-right: 1em;
     margin-left: 1em;
     width: 19%;
     border-radius: 10px;
-}
+} */
 
 #day1Image {
     width: 50%;
     display: none;
 }
 
-#day2 {
+/* #day2 {
     margin-right: 1em;
     width: 19%;
     border-radius: 10px;
-}
+} */
 
 #day2Image {
     width: 50%;
     display: none;
 }
 
-#day3 {
+/* #day3 {
     margin-right: 1em;
     width: 19%;
     border-radius: 10px;
     
-}
+} */
 
 #day3Image {
     width: 50%;
     display: none;
 }
 
-#day4 {
+/* #day4 {
     margin-right: 1em;
     width: 19%;
     border-radius: 10px;
-}
+} */
 
 #day4Image {
     width: 50%;
     display: none;
 }
 
-#day5 {
+/* #day5 {
     margin-right: 1em;
     width: 19%;
     border-radius: 10px;
-}
+} */
 
 #day5Image {
     width: 50%;

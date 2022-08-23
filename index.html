@@ -10,27 +10,25 @@
 </head>
 <body>
 <!-- header -->
-<header>
     <div class="banner">
         <h1>Your Daily Forecast</h1>
     </div>
-</header>
-<main class="container col-12">
+
 <!-- navi card on the left -->
-    <div class="row">
-        <div class="column col-3">
-            <div class="sideCard form-group">
+<div class="container">
+    <div class="row d-flex flex-row justify-content-center">
+      <div class="col-6 col-md-3 mx-4">
+        <div class="sideCard form-group">
                 <div id="inputArea">
-                <h2 id="sideCardTitle">Search for a City</h2>
                     <input type="text" class="form-control" id="inputValue" placeholder="Enter City Name Here" style="font-style:italic">
                     <button type="submit" class="btn btn-primary btn-lg w-100 mx-auto" id="searchBtn">Search</button>
                 </div>
-                <div class="sideCard cityLinks card" id="buttonBox" style="width: 100%" data-id="1">
+                <div class="sideCard cityLinks card mb-4" id="buttonBox" style="width: 100%" data-id="1">
                 </div>
             </div>
         </div>
 <!-- main current weather box -->
-        <div class="weatherInfo">
+    <div class="col-12 col-md-7 mx-4 mb-3">
             <div class="mainWeatherDetail">
                 <div id="weatherTitleBox">
                     <div id="currentDayIconSection">
@@ -48,59 +46,64 @@
                 </ul>
                 </div>
             </div>
+    </div>
 <!-- Begin daily boxes -->
-            <div class="fiveDayHdr">
-                <h2>Five Day Forecast</h2>
-            </div>
-            <div class="miniBoxContainer">
-                <div data-id="3" id="day1">
-                <ul class="list-group list-group-flush">
-                    <li class="list-group-item">Date: <span id="day1Date"></span></li>
-                    <img id="day1Image" class="list-group-item"src="http://openweathermap.org/img/wn/10d@2x.png" alt="weather icon" class="wIcon">
-                    <li class="list-group-item">Temp: <span id="day1Temp"></span>&degF</li>
-                    <li class="list-group-item">Wind: <span id="day1Wind"></span></span> MPH</li>
-                    <li class="list-group-item">Humidity: <span id="day1Humidity"></span>%</li>
-                </ul>
-                </div> 
-                <div data-id="4" id="day2">
-                <ul class="list-group list-group-flush">
-                    <li class="list-group-item">Date: <span id="day2Date"></span></li>
-                    <img id="day2Image" class="list-group-item" src="http://openweathermap.org/img/wn/10d@2x.png" alt="weather icon" class="wIcon">
-                    <li class="list-group-item">Temp: <span id="day2Temp"></span>&degF</li>
-                    <li class="list-group-item">Wind: <span id="day2Wind"></span> MPH</li>
-                    <li class="list-group-item">Humidity: <span id="day2Humidity"></span>%</li>
-                </ul>
+            <div class="container d-flex justify-content-center">
+                <div class="mx-auto banner2">
+                    <h1>The Next 5 Days</h1>
                 </div>
-                <div data-id="5" id="day3">
-                <ul class="list-group list-group-flush">
-                    <li class="list-group-item">Date: <span id="day3Date"></span></li>
-                    <img id="day3Image" class="list-group-item" src="http://openweathermap.org/img/wn/10d@2x.png" alt="weather icon" class="wIcon">
-                    <li class="list-group-item">Temp: <span id="day3Temp"></span>&degF</li>
-                    <li class="list-group-item">Wind: <span id="day3Wind"></span> MPH</li>
-                    <li class="list-group-item">Humidity: <span id="day3Humidity"></span>%</li>
-                </ul>
-                </div> 
-                <div data-id="6" id="day4">
-                <ul class="list-group list-group-flush">
-                    <li class="list-group-item">Date: <span id="day4Date"></span></li>
-                    <img id="day4Image" class="list-group-item" src="http://openweathermap.org/img/wn/10d@2x.png" alt="weather icon" class="wIcon">
-                    <li class="list-group-item">Temp: <span id="day4Temp"></span>&degF</span></li>
-                    <li class="list-group-item">Wind: <span id="day4Wind"></span> MPH</li>
-                    <li class="list-group-item">Humidity: <span id="day4Humidity"></span>%</li>
-                </ul>
-                </div>
-                <div data-id="6" id="day5">
-                <ul class="list-group list-group-flush">
-                    <li class="list-group-item">Date: <span id="day5Date"></span></li>
-                    <img id="day5Image" class="list-group-item" src="http://openweathermap.org/img/wn/10d@2x.png" alt="weather icon" class="wIcon">
-                    <li class="list-group-item">Temp: <span id="day5Temp"></span>&degF</li>
-                    <li class="list-group-item">Wind: <span id="day5Wind"></span> MPH</li>
-                    <li class="list-group-item">Humidity: <span id="day5Humidity"></span>%</li>
-                </ul>
-                </div>    
             </div>
-    </div>                  
-</main>
+            <div class="container-fluid">
+                <div class="row d-flex justify-content-center">  
+                    <div class="col-sm-3 col-md-6 col-lg-2 mb-4">
+                    <ul class="list-group list-group-flush" data-id="3" id="day1">
+                        <li class="list-group-item">Date: <span id="day1Date"></span></li>
+                        <img id="day1Image" class="list-group-item"src="http://openweathermap.org/img/wn/10d@2x.png" alt="weather icon" class="wIcon">
+                        <li class="list-group-item">Temp: <span id="day1Temp"></span>&degF</li>
+                        <li class="list-group-item">Wind: <span id="day1Wind"></span></span> MPH</li>
+                        <li class="list-group-item">Humidity: <span id="day1Humidity"></span>%</li>
+                    </ul>
+                    </div>
+                    <div class="col-sm-3 col-md-6 col-lg-2 mb-4">
+                        <ul class="list-group list-group-flush" data-id="4" id="day2">
+                            <li class="list-group-item">Date: <span id="day2Date"></span></li>
+                            <img id="day2Image" class="list-group-item"src="http://openweathermap.org/img/wn/10d@2x.png" alt="weather icon" class="wIcon">
+                            <li class="list-group-item">Temp: <span id="day2Temp"></span>&degF</li>
+                            <li class="list-group-item">Wind: <span id="day2Wind"></span></span> MPH</li>
+                            <li class="list-group-item">Humidity: <span id="day2Humidity"></span>%</li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-3 col-md-6 col-lg-2 mb-4">
+                        <ul class="list-group list-group-flush" data-id="5" id="day3">
+                            <li class="list-group-item">Date: <span id="day3Date"></span></li>
+                            <img id="day3Image" class="list-group-item"src="http://openweathermap.org/img/wn/10d@2x.png" alt="weather icon" class="wIcon">
+                            <li class="list-group-item">Temp: <span id="day3Temp"></span>&degF</li>
+                            <li class="list-group-item">Wind: <span id="day3Wind"></span></span> MPH</li>
+                            <li class="list-group-item">Humidity: <span id="day3Humidity"></span>%</li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-3 col-md-6 col-lg-2 mb-4">
+                        <ul class="list-group list-group-flush" data-id="6" id="day4">
+                            <li class="list-group-item">Date: <span id="day4Date"></span></li>
+                            <img id="day4Image" class="list-group-item"src="http://openweathermap.org/img/wn/10d@2x.png" alt="weather icon" class="wIcon">
+                            <li class="list-group-item">Temp: <span id="day4Temp"></span>&degF</li>
+                            <li class="list-group-item">Wind: <span id="day4Wind"></span></span> MPH</li>
+                            <li class="list-group-item">Humidity: <span id="day4Humidity"></span>%</li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-3 col-md-6 col-lg-2 mb-4">
+                        <ul class="list-group list-group-flush" data-id="7" id="day5">
+                            <li class="list-group-item">Date: <span id="day5Date"></span></li>
+                            <img id="day5Image" class="list-group-item"src="http://openweathermap.org/img/wn/10d@2x.png" alt="weather icon" class="wIcon">
+                            <li class="list-group-item">Temp: <span id="day5Temp"></span>&degF</li>
+                            <li class="list-group-item">Wind: <span id="day5Wind"></span></span> MPH</li>
+                            <li class="list-group-item">Humidity: <span id="day5Humidity"></span>%</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        
+    </div>            
 
 
 
