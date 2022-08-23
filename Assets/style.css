@@ -90,8 +90,7 @@ h2 {
 }
 
 #currentDayIconSection {
-    display: flex;
-    flex-direction: row;
+   
     align-items: center;
     width: 15%;
 }
