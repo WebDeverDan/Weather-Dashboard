@@ -15,7 +15,7 @@ $(document).ready(function () {
   var buttons = document.querySelector("buttons");
   var history = [];
 
-
+// loads local storage
   function loadStorage() {
     var savedCities = JSON.parse(localStorage.getItem("history"));
     console.log("history", savedCities);
@@ -30,12 +30,12 @@ $(document).ready(function () {
 
     function showcityinfo(cityName) {
       document.getElementById("weatherTitleBox").style.display = "flex";
-
+      
       var mainAPI =
         "https://api.openweathermap.org/data/2.5/weather?q=" +
         cityName +
         "&units=imperial&appid=60e9ee923c45e087f45389019a259b46";
-
+        // calls the api
       fetch(mainAPI)
         .then((data) => data.json())
         // .then(data => console.log(data))
@@ -47,7 +47,6 @@ $(document).ready(function () {
           var latValue = data["coord"]["lat"];
           var longValue = data["coord"]["lon"];
 
-          // I will need to append the whole weather title with the date to the dom.
           $("#currentDayImage").attr(
             "src",
             `http://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`
@@ -122,8 +121,6 @@ $(document).ready(function () {
                 .then((data) => data.json())
                 .then((data) => {
                
-
-                  
                   // this is the setup for each mini time block. the 3 refers to the day in list of objects found in json data., the time is in unix timecode, and the format is from moment
                   // day 1
                   $("#day1Date").html(
