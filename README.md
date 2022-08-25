@@ -5,6 +5,4 @@ Upon searching for a location, that location will be saved to the left-hand side
 Link to Github Repository: https://github.com/WebDeverDan/Weather-Dashboard
 Link to Deployed application on Github pages:https://webdeverdan.github.io/Weather-Dashboard/
 
-![Image 1 of application:](https://github.com/WebDeverDan/Weather-Dashboard/blob/fedd03e1c02401ac740315603be406c4850af255/Assets/Screenshot1.png)
-![Image 2 of application:](https://github.com/WebDeverDan/Weather-Dashboard/blob/fedd03e1c02401ac740315603be406c4850af255/Assets/Screenshot2.png)
-![Image 3 of application:](https://github.com/WebDeverDan/Weather-Dashboard/blob/fedd03e1c02401ac740315603be406c4850af255/Assets/Screenshot3.png)
+
