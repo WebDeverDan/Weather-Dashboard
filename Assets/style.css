@@ -8,6 +8,7 @@ body {
     background-image: url(IMG_0570.JPG);
     background-size: cover;
 }
+
 h1 {
     color: var(--white);
     margin: 1em;
@@ -21,21 +22,23 @@ h2 {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: green;
+    background-color: #355E3B;
     height: 4em;
     margin-bottom: 2em;
     width: 100%;
-    }
+    box-shadow: 0 10px 4px -4px black;
+}
 
 .banner2{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: green;
+    background-color: #355E3B;
     height: 4em;
     margin-bottom: 2em;
     width: 75%;
-    }
+    box-shadow: 0 10px 4px -4px black;
+}
 
 #sideCardTitle {
     background-color: var(--white);
@@ -81,8 +84,8 @@ h2 {
     padding-top: 1em;
     padding-left: 1em;
     border-radius: 10px;
-
 }
+
 #city {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 35px;
@@ -90,7 +93,6 @@ h2 {
 }
 
 #currentDayIconSection {
-   
     align-items: center;
     width: 15%;
 }
@@ -156,6 +158,7 @@ h2 {
 #day1Image {
     width: 50%;
     display: none;
+    margin: auto;
 }
 
 /* #day2 {
@@ -167,6 +170,7 @@ h2 {
 #day2Image {
     width: 50%;
     display: none;
+    margin: auto;
 }
 
 /* #day3 {
@@ -179,6 +183,7 @@ h2 {
 #day3Image {
     width: 50%;
     display: none;
+    margin: auto;
 }
 
 /* #day4 {
@@ -190,6 +195,7 @@ h2 {
 #day4Image {
     width: 50%;
     display: none;
+    margin: auto;
 }
 
 /* #day5 {
@@ -201,5 +207,6 @@ h2 {
 #day5Image {
     width: 50%;
     display: none;
+    margin: auto;
 }
 
